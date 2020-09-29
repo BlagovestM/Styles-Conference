@@ -1,0 +1,72 @@
+.subheader-schedule {
+    width: 100%;
+    background: linear-gradient(to right, #1bd732fc, #f6f1d3);
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.workshops{
+    text-align: center;
+    padding:35px 0 ;
+    .data,
+    .sub-title{
+        color:#a9b2b9;
+        text-align: center;
+    }
+
+    .title{
+        color: #648880;
+        font-size: 24px;
+        margin-top: 0; 
+    }
+
+    .name{
+        color: #648880;
+        font-size: 18px;
+        text-decoration: none;
+    }
+    .text{
+        color: #888;
+        text-indent: 0;
+    }
+
+    a{
+        text-decoration: none;
+    }
+}
+
+
+@media only screen and (min-width: 767px) {
+    .workshops{
+        .name,
+        .title{ 
+            text-align: left;
+        }
+       
+        .row{
+            padding: 15px 0;
+            display: flex;
+            align-items: flex-start;
+        }
+        .left-colum{
+            flex-basis: 20%;
+            flex-grow: 0;
+            flex-shrink: 0;
+            padding-right: 25px;
+
+           >*{
+            text-align: right;
+           }
+        }
+        .right-colum{
+            display: flex;
+            border-bottom:1px solid #dfe2e5;
+            flex-grow: 1;
+            > div{
+                width: 50%;
+                padding: 0 20px;
+            }
+        }
+      
+       
+    }
+}
